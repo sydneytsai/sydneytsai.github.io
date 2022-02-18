@@ -1,0 +1,8 @@
+.trinkets {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  margin-top: 10px;
+}
