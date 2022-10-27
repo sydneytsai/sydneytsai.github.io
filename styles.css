@@ -343,10 +343,8 @@ main {
   margin-left: 0.5em;
 }
 
-.softSkills__list {
-  display: flex;
+.additional-activities__list {
   justify-content: left;
-  flex-wrap: wrap;
   margin: 5em;
 }
 
