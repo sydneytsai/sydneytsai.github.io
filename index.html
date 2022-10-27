@@ -9,19 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
-  <!-- BEGIN PART 1 -->
   <link rel="stylesheet" href="styles.css">
   <title>Sydney Tsai</title>
-  <!-- END PART 1 -->
 </head>
 
 <body class="light" id="top">
   <header class="header center">
-    <!-- BEGIN PART 2 -->
     <h3>
       <a class="link">ST</a>
     </h3>
-    <!-- END PART 2 -->
     <nav class="nav center">
       <ul class="nav__list center">
         <li class="nav__list-item">
@@ -34,45 +30,24 @@
           <a class="link link--nav" href="#contact">Contact</a>
         </li>
       </ul>
-
-      <!-- BEGIN PART 5 -->
-
       <button type="button" aria-label="toggle theme" class="btn btn--icon">
         <i id="btn-theme" class="fas fa-moon"></i>
       </button>
-
-      <!-- 
-        5.1: What does this button tag correspond to on the site? 
-        this button is the moon button on the website
-      
-      -->
-
       <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
         <i class="fas fa-bars"></i>
       </button>
-
-      <!-- 
-        5.2: Try Ctrl-F in styles.css and look the class 'nav__hamburger'. You'll notice that it
-        appears in 2 places. Why is one of the rules 'display: none' on one instance? How do you
-        make it so that this button appears on screen? 
-        Hint: remember what @media (max-width: 600px) means.
-        this affects the layout of the screen when the web browser is minimized
-
-       -->
-
-      <!-- END PART 5 -->
     </nav>
   </header>
 
   <main>
     <div class="about center">
-      <!-- BEGIN PART 6 -->
       <h1 class="about__name">Hi, I'm Sydney Tsai</h1>
-      <h2 class="about__role">Student at University of California, Berkeley</h2>
-      <p class="about__desc">I am a first year at UC Berkeley, studying electrical engineering and computer science (EECS).</p>
-      <!-- END PART 6 -->
+      <h2 class="about__role">EECS at University of California, Berkeley</h2>
+      <p class="about__desc">I am a second year at UC Berkeley, studying electrical engineering and computer science (EECS). I am an aspiring
+        software engineer from Los Angeles, CA.
+      </p>
       <div class="about__contact center">
-        <a href="https://example.com">
+        <a href="https://drive.google.com/file/d/1ml8vQebRp_BgTYkfNbygSJYZz8ZI3Ai4/view?usp=sharing">
           <span class="btn btn--outline">Resume</span>
         </a>
 
@@ -88,18 +63,50 @@
     <section id="projects" class="section projects">
       <h2 class="section__title">Projects</h2>
       <div class="projects__grid">
-        <!-- BEGIN PART 8 -->
         <div class="project">
-          <h3>Project 1</h3>
+          <h3>Berkeley Mobile</h3>
           <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
+            Berkeley Mobile is a campus resource and information aggregation platform. 
           </p>
           <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">Swift</li>
+            <li class="project__stack-item">Firebase</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://technology.berkeley.edu/mobile-app" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Chabot Space and Science Center App</h3>
+          <p class="project__description">
+            An app utilized by thousands for museum goers of the Chabot Space and Science Center in Oakland, California.
+          </p>
+          <ul class="project__stack">
             <li class="project__stack-item">JavaScript</li>
+            <li class="project__stack-item">React Native</li>
+          </ul>
+
+          <a href="https://github.com/Codify-Club-Berkeley/cssc-mobile-app" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://chabotspace.org/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Grindset</h3>
+          <p class="project__description">
+            A personal project to help with productivity and wellness. Features include a decision maker and a
+            Pomodoro timer.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Swift</li>
           </ul>
 
           <a href="https://github.com" aria-label="source code" class="link link--icon">
@@ -109,56 +116,11 @@
             <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
         </div>
-
-        <div class="project">
-          <h3>Project 2</h3>
-          <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-            <li class="project__stack-item">Java</li>
-            <li class="project__stack-item">JavaScript</li>
-          </ul>
-
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-
-        <div class="project">
-          <h3>Project 3</h3>
-          <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-            <li class="project__stack-item">Java</li>
-            <li class="project__stack-item">JavaScript</li>
-          </ul>
-
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-
-        <!-- END PART 8 -->
       </div>
     </section>
 
 
     <section class="section skills" id="skills">
-      <!-- BEGIN PART 10 -->
       <h2 class="section__title">Skills</h2>
         <h6 class="section__title">Languages</h6>
           <ul class="skills__list">
@@ -167,8 +129,10 @@
             <li class="skills__list-item btn btn--plain">HTML</li>
             <li class="skills__list-item btn btn--plain">Javascript</li>
             <li class="skills__list-item btn btn--plain">CSS</li>
+            <li class="skills__list-item btn btn--plain">C</li>
+            <li class="skills__list-item btn btn--plain">Scheme</li>
+            <li class="skills__list-item btn btn--plain">RISC-V</li>
           </ul>
-      <!-- END PART 10 -->
     </section>
 
     <section class="section soft skills" id="softskills">
@@ -187,11 +151,9 @@
   </main>
 
   <footer class="footer">
-    <!-- BEGIN PART 12 -->
     <a href="/" class="link footer__link">
       Created By Sydney Tsai
     </a>
-    <!-- END PART 12 -->
   </footer>
 
 
