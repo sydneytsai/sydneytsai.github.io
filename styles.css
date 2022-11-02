@@ -112,8 +112,6 @@ button {
   color: var(--clr-primary);
 }
 
-/* BEGIN PART 4 */
-
 .link::before {
   content: "";
   display: inline;
@@ -130,8 +128,6 @@ button {
 .link:focus::before {
   width: 100%;
 }
-
-/* END PART 4 */
 
 .link--nav {
   color: var(--clr-fg);
@@ -212,8 +208,6 @@ button {
   layout
 ========*/
 
-/* BEGIN PART 3 */
-
 .center {
     display: flex;
     justify-content: center;
@@ -227,7 +221,6 @@ button {
   justify-content: center;
 }
 
-/* END PART 3 */
 
 main {
   max-width: 1100px;
@@ -259,16 +252,12 @@ main {
   width: 1em;
 }
 
-/* BEGIN PART 7 */
-
 .about {
   margin-top: 1em;
   display: grid;
   justify-content: center;
   text-align: center;
 }
-
-/* END PART 7 */
 
 .about__name {
   color: var(--clr-primary);
@@ -300,16 +289,12 @@ main {
   margin-right: 1em;
 }
 
-/* BEGIN PART 9 */
-
 .projects__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, calc(100% / 3 - 10px * 2 / 3));
 }
-
-/* END PART 9 */
 
 .project {
   padding: 2em;
@@ -350,8 +335,6 @@ main {
   margin: 5em;
 }
 
-/* BEGIN PART 11 */
-
 .skills__list {
   max-width: 450px;
   width: 95%;
@@ -364,8 +347,6 @@ main {
 .skills__list-item {
   margin: 10px;
 }
-
-/* END PART 11 */
 
 .contact {
   flex-direction: column;
@@ -441,4 +422,36 @@ main {
   .scroll-container {
     display: none;
   }
+}
+
+/*========
+  Resume
+========*/
+
+.resume__title {
+  margin-top: 1em;
+  color: var(--clr-primary);
+  text-align: center;
+
+}
+
+.resume-section__title {
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.experience__title {
+  text-align: left;
+}
+
+.experience__list {
+  justify-content: left;
+  margin: 1em;
+  margin-left: 3em;
+}
+
+.subheader__title {
+  justify-content: left;
+  font-style: italic;
 }
