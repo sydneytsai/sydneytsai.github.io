@@ -432,6 +432,7 @@ main {
   margin-top: 1em;
   color: var(--clr-primary);
   text-align: center;
+  text-transform: uppercase;
 
 }
 
