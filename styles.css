@@ -236,6 +236,7 @@ main {
   text-align: center;
   margin-bottom: 1em;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .nav__list {
@@ -455,4 +456,45 @@ main {
 .subheader__title {
   justify-content: left;
   font-style: italic;
+}
+
+.resume__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(100% / 3 - 10px * 2 / 3));
+}
+
+.resume__description {
+  margin-top: 1em;
+}
+
+.resume__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.resume__stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.resume .link--icon {
+  margin-left: 0.5em;
+}
+
+.resume {
+  padding: 2em;
+  margin: 1em;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+
+.resume:hover {
+  transform: translateY(-7px);
 }
